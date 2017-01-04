@@ -1,5 +1,6 @@
-package controller;
+package DAO;
 
+import factory.ConnectionFactory;
 import model.Article;
 
 import java.sql.*;
@@ -9,20 +10,23 @@ import java.util.List;
 /**
  * Created by sg-0036936 on 04/01/2017.
  */
-public class Action {
+public class DAOArticle {
 
     private Connection connection;
 
-    public Action() {
+    //prepared statement to insertion
+    PreparedStatement statement = null;
+
+    public DAOArticle() {
         this.connection = new ConnectionFactory().getConnection();
     }
 
-    public void addArticle(Article article){
+    public void addArticle(Article article) {
         String sql = "insert into izihub" +
                 "(id, title, article, author, tag)" + "values (?, ?, ?, ?, ?)";
         try {
-            //prepared statement to insertion
-            PreparedStatement statement = connection.prepareStatement(sql);
+            connection.setAutoCommit(false);
+            connection.prepareStatement(sql);
             //set the values
             statement.setInt(1, article.getIdArticle());
             statement.setString(2, article.getTitle());
@@ -32,15 +36,21 @@ public class Action {
 
             //execute
             statement.execute();
-            statement.close();
+            connection.commit();
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
+            try {
+                connection.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+
         }
 
     }
 
-    public void removeArticle(Article article){
+    public void removeArticle(Article article) {
         try {
             PreparedStatement statement = connection.prepareStatement("delete from izihub where id=?");
             statement.setLong(1, article.getIdArticle());
@@ -56,7 +66,7 @@ public class Action {
             List<Article> articles = new ArrayList<Article>();
             PreparedStatement statement = this.connection.prepareStatement("select * from contato");
             ResultSet resultSet = statement.executeQuery();
-            while (resultSet.next()){
+            while (resultSet.next()) {
 
                 //Creating the object
 
@@ -75,9 +85,15 @@ public class Action {
             resultSet.close();
             statement.close();
             return articles;
-        } catch (SQLException e){
+        } catch (SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
-    }
 
+    }
 }

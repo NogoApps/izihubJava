@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e32b60a6-a701-4c81-aa87-9220d35858bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/Clone.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Clone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/Article.java" afterPath="$PROJECT_DIR$/src/main/java/model/Article.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DAO/DAOArticle.java" afterPath="$PROJECT_DIR$/src/main/java/DAO/DAOArticle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,19 +57,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Action.java">
+      <file leaf-file-name="DAOArticle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/DAOArticle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="56" column="91" lean-forward="false" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+            <state relative-caret-position="578">
+              <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#1612#1621#0" expanded="true" />
-                <marker date="1483545949768" expanded="true" signature="385:484" ph="insert into contato... " />
-                <marker date="1483545949768" expanded="true" signature="1248:1277" ph="delete from " />
-                <marker date="1483545949768" expanded="true" signature="1701:1722" ph="select * fro... contato" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#1849#1858#0" expanded="true" />
+                <marker date="1483548333399" expanded="true" signature="500:599" ph="insert into contato... " />
+                <marker date="1483548333399" expanded="true" signature="1485:1514" ph="delete from " />
+                <marker date="1483548333399" expanded="true" signature="1938:1959" ph="select * fro... contato" />
               </folding>
             </state>
           </provider>
@@ -106,7 +106,7 @@
         </entry>
       </file>
       <file leaf-file-name="ConnectionFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ConnectionFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
@@ -163,6 +163,9 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/Actions.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Article.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/DAOArticle.java" />
       </list>
     </option>
   </component>
@@ -294,6 +297,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="izihub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -315,6 +344,12 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="DAO" />
+      <recent name="factory" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.TestaConexao">
     <configuration default="false" name="TestaConexao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -748,12 +783,12 @@
       <option name="presentableId" value="Default" />
       <updated>1483497151806</updated>
       <workItem from="1483497153534" duration="2064000" />
-      <workItem from="1483544241949" duration="1754000" />
+      <workItem from="1483544241949" duration="4298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3818000" />
+    <option name="totallyTimeSpent" value="6362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -797,7 +832,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -860,7 +897,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
@@ -906,7 +943,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/factory/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
@@ -957,18 +994,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/DAOArticle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="56" column="91" lean-forward="false" selection-start-line="56" selection-start-column="91" selection-end-line="56" selection-end-column="91" />
+        <state relative-caret-position="578">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#1612#1621#0" expanded="true" />
-            <marker date="1483545949768" expanded="true" signature="385:484" ph="insert into contato... " />
-            <marker date="1483545949768" expanded="true" signature="1248:1277" ph="delete from " />
-            <marker date="1483545949768" expanded="true" signature="1701:1722" ph="select * fro... contato" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#1849#1858#0" expanded="true" />
+            <marker date="1483548333399" expanded="true" signature="500:599" ph="insert into contato... " />
+            <marker date="1483548333399" expanded="true" signature="1485:1514" ph="delete from " />
+            <marker date="1483548333399" expanded="true" signature="1938:1959" ph="select * fro... contato" />
           </folding>
         </state>
       </provider>

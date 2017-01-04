@@ -1,4 +1,4 @@
-import controller.ConnectionFactory;
+import factory.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;
