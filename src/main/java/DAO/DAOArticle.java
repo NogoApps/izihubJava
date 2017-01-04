@@ -25,6 +25,7 @@ public class DAOArticle {
         String sql = "insert into izihub" +
                 "(id, title, article, author, tag)" + "values (?, ?, ?, ?, ?)";
         try {
+            connection.setAutoCommit(false);
             connection.prepareStatement(sql);
             //set the values
             statement.setInt(1, article.getIdArticle());
@@ -35,10 +36,16 @@ public class DAOArticle {
 
             //execute
             statement.execute();
-            statement.close();
+            connection.commit();
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
+            try {
+                connection.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+
         }
 
     }
